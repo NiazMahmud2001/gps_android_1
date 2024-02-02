@@ -1,0 +1,12 @@
+#:import MapView kivy_garden.mapview.MapView
+
+<Maps_view>
+    id: hello_map
+    lat: 33.75
+    lon:-84.4
+    zoom: 10
+
+    on_lat:
+        self.start_getting_markets_in_fov()
+    on_lon:
+        self.start_getting_markets_in_fov()
